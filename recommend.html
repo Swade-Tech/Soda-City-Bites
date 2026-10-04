@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+    Author: Sean Wade
+    Page: Recommend a Restaurant
+    Website: Soda City Bites
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soda City Bites | Recommend a Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+    <div class="logo">Soda City Bites</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="southern-food.html">Southern Food</a>
+        <a href="international-food.html">International Food</a>
+        <a href="desserts-drinks.html">Dessert &amp; Drinks</a>
+        <a class="active" href="recommend.html">Recommend</a>
+    </nav>
+</header>
+
+<main>
+    <h1 class="page-title">Recommend a Restaurant</h1>
+    <div class="divider"></div>
+    <p class="intro">Know a great place in or around Columbia? Share it with Soda City Bites.</p>
+
+    <section class="recommend-box">
+        <h2>Restaurant Recommendation</h2>
+        <form action="#" method="post">
+            <label for="restaurant">Restaurant Name</label>
+            <input type="text" id="restaurant" name="restaurant" placeholder="Enter restaurant name">
+
+            <label for="cuisine">Type of Food</label>
+            <select id="cuisine" name="cuisine">
+                <option value="">Select a category</option>
+                <option value="southern">Southern Food</option>
+                <option value="international">International Food</option>
+                <option value="desserts">Desserts &amp; Drinks</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="location">Location</label>
+            <input type="text" id="location" name="location" placeholder="Columbia, SC">
+
+            <label for="recommendation">Why do you recommend it?</label>
+            <textarea id="recommendation" name="recommendation" rows="6" placeholder="Tell us about the restaurant, favorite dishes, prices, or anything else students should know."></textarea>
+
+            <button type="submit">Submit Recommendation</button>
+        </form>
+    </section>
+
+    <section class="info-box">
+        <h2>What makes a helpful recommendation?</h2>
+        <p>Include the restaurant name, type of cuisine, location, price range, favorite dishes, and anything that would help another student decide where to eat.</p>
+    </section>
+</main>
+
+<footer>
+    <span>Soda City Bites</span>
+    <span>Food in and around Columbia, SC</span>
+    <span>USC Student Food Guide</span>
+</footer>
+</body>
+</html>
