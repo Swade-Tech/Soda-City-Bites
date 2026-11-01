@@ -1,0 +1,24 @@
+SODA CITY BITES — MOBILE RESPONSIVE UPDATE
+Author: Sean Wade
+Pages selected for the assignment: index.html and southern-food.html
+
+GenAI prompt used:
+I have a static desktop website built with HTML and CSS. Refactor it to be mobile-friendly and responsive. Use responsive design with CSS media queries; prevent horizontal scrolling on small screens; make navigation touch-friendly; optimize font sizes and spacing for readability; make images responsive; and keep the design clean and modern. Preserve the existing Soda City Bites navy, cream, coral, and tan design and use the existing food images. Return updated HTML and CSS with explanations.
+
+Changes made in styles.css:
+1. Added a fluid main content width and responsive padding.
+2. Used CSS Grid with three columns on wide screens, two columns on tablet screens, and one column on phones.
+3. Added breakpoints at 900px and 600px.
+4. Changed phone navigation to a two-column grid with touch-friendly links at least 44px tall.
+5. Used clamp() for flexible headings and spacing.
+6. Made images scale to the width of their cards, with a responsive aspect ratio and object-fit: cover.
+7. Added min-width: 0 and max-width constraints to prevent content from forcing horizontal scrolling.
+8. Made footer content wrap on smaller screens and stack on phones.
+9. Added visible keyboard focus styles for navigation and buttons.
+10. Preserved the existing colors, content, images, and page links.
+
+Testing instructions:
+- Open index.html and southern-food.html in Chrome at desktop size.
+- Use Chrome DevTools device emulation (Ctrl+Shift+I, then Ctrl+Shift+M) and select a phone viewport.
+- Check that there is no horizontal scrolling and that navigation and cards fit the screen.
+- Run Lighthouse separately on each page with the Mobile device selected and save screenshots of the results.
